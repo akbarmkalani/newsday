@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Wix+Madefor+Display&display=swap');
+
+* {
+
+    font-family: 'Wix Madefor Display', sans-serif;
+}
+
+*{
+    li{
+        list-style-type: none;
+    }
+    a{
+        text-decoration: none;
+    }
+}
+main {
+    >nav{
+        height: 90px !important;
+     //   background-color: red;
+        >div{
+            >ul{
+                >li{
+                    >a{
+                        color: #070232;
+                        &:hover{
+                            color: #070232;
+                        }
+                    }
+                }
+            }
+            >div{
+                >span{
+                    background-color: #e2e2e7eb;
+                    height: 40px;
+                    width: 350px;
+                    border-radius: 10px;
+                    >input{
+                        border: none;
+                        outline: none;
+                        background: none;
+                      
+                    }
+                }
+            }
+        }
+    }
+    >section {
+        >div {
+            >figure {
+                >a{
+                  
+                    width: 150px !important;
+                    height: 50px;
+                    border: 1px solid #c8c5c5;
+                    border-radius: 20px;
+                    background-color: #c81902;
+                    color: #ffffffff;
+                    text-transform: capitalize;
+                    text-decoration: none;
+                    transition: .4s;
+                    &:hover{
+                        color: rgb(2, 2, 37);
+                        background-color: #ffffffff;
+                        border: 1px solid #f90000;
+                    }
+                }
+             
+                >div {
+                  
+                    >img{
+                        width: 100%;
+                        height: 400px;
+                        object-fit: cover;
+                        border-radius: 10px;
+                    }
+                    &:hover>figcaption>div {
+                        //transform: translateX(0);
+                        opacity: 1;
+                    }
+
+                    >figcaption {
+                        >div {
+                            transition: .4s;
+                            opacity: 0;
+                            //transform: translateX(-130%);
+                            height: 100%;
+                            width: 94%;
+                           border-radius: 10px;
+                            top: 50%;
+                            left: 50%;
+                            transform: translate(-50%, -50%);
+                            background-color: rgba(26, 28, 45, 0.511);
+
+                            >span {
+                                color: #ffffffff;
+                                transition: .6s;
+
+                                &:hover {
+                                    color: #DCB381;
+                                }
+                            }
+
+                            >a {
+                                bottom: 12px;
+                                font-family: 'Dancing Script', cursive;
+                                color: #ffffffff;
+                                font-size: 25px;
+
+                                &:hover {
+                                    color: #c8c5c5;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
